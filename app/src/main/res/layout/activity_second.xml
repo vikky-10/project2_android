@@ -1,31 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondActivity"
-    android:orientation="vertical">
+    android:orientation="horizontal"
+    android:largeScreens="true"
+    tools:context=".MainActivity"
+    android:background="@drawable/img_1"
+    >
+
     <TextView
-        android:id="@+id/display"
+
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="Second Activity"
+        android:textColor="#DAB8D3E4"
+        android:textSize="33sp"
+        android:textStyle="bold" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/a4"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginStart="0dp"-->
+
+<!--        android:src="@drawable/unplash1"></ImageView>-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="451dp"
+        android:layout_marginStart="1dp"
         android:layout_marginTop="150dp"
-        android:layout_marginBottom="30dp"
-        android:gravity="center"
-        android:textColor="#4E5969"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:alpha="0.6"
+        app:cardBackgroundColor="#DAB8D3E4"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
 
-    <TextView
-        android:id="@+id/display2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="30dp"
-        android:gravity="center"
-        android:textColor="#4E5969"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        <TextView
 
-</LinearLayout>
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="First object"
+            android:textColor="#151533"
+            android:textSize="33sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="80dp"
+            android:textColor="#434367"
+            android:textSize="22sp"
+            android:textStyle="bold"></TextView>
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="20dp"
+            android:text="Second object"
+            android:textColor="#151533"
+            android:textSize="33sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/display2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="260dp"
+            android:textColor="#434367"
+            android:textSize="22sp"
+            android:textStyle="bold"></TextView>
+
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/b"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="230dp"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:layout_marginTop="153dp"-->
+        <!--            android:layout_marginRight="10dp"-->
+        <!--            android:src="@drawable/path_2465"></ImageView>-->
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

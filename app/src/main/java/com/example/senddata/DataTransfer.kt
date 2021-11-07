@@ -8,7 +8,7 @@ class DataTransfer:Serializable{
 
     constructor(name: String, password:String ){
         username=name;
-        Password=password
+        Password=password;
 
 
     }
